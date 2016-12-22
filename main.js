@@ -30,5 +30,5 @@ function calcular ()
             salida.innerHTML = "1";
          }   
         }
-}
+}/
 
