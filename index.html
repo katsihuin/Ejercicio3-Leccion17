@@ -20,11 +20,9 @@
 						<div class="form-group">
 							<label for="day" class="control-label col-md-offset-1 col-md-3">Monos</label>
 							<div class="col-md-5">
-								<form action="action_page.php">
-								  <select name="mono" id="mono">
-								    <option value="1">Mono a</option>
-								    <option value="2">Mono b</option>
-								  </select>
+								<form action="action_page.php" name="formulario" method="get">
+								  <input type="checkbox" name="monkey" id=monkeyA> MonkeyA
+								  <input type="checkbox" name="monkey" id=monkeyB> MonkeyB
 								  <br><br>
 								</form>
 							</div>	
@@ -33,10 +31,8 @@
 							<label class="control-label col-md-offset-1 col-md-3" for="vacation">¿Esta Sonriendo?</label>
 							<div class="col-md-5">
 								<form action="action_page.php">
-								  <select name="sonreir" id="sonreir">
-								    <option value="1">Si</option>
-								    <option value="2">No</option>
-								  </select>
+								    <input type="checkbox" name="smile" id=si> Si
+								  	<input type="checkbox" name="smile" id=no> No
 								  <br><br>
 								</form>	
 							</div>
