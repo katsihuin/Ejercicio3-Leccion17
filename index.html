@@ -12,38 +12,42 @@
 			<div class="container">
 				<br>
 				<div class="form section-md">
-					<div class="col-md-offset-4 cold-md-8">
+					<div class="text-center">
 						<h2 class="">MonkeyTrouble</h2>
 						<p class="">Completa el formulario para saber si estas en problemas</p>
 					</div><br><br>
-					<form action="" class="">
+					<form action="" class="" name="formulario" method="get">
 						<div class="form-group">
 							<label for="day" class="control-label col-md-offset-1 col-md-3">Monos</label>
 							<div class="col-md-5">
-								<form action="action_page.php" name="formulario" method="get">
-								  <input type="checkbox" name="monkey" id=monkeyA> MonkeyA
-								  <input type="checkbox" name="monkey" id=monkeyB> MonkeyB
+								
+								  <input type="checkbox" name="monkeyA" id=monkeyA> MonkeyA
+								  <div id="img_mono_a"></div>
+								  <input type="checkbox" name="monkeyB" id=monkeyB> MonkeyB
+								  <div id="img_mono_b"></div>
 								  <br><br>
-								</form>
+								
 							</div>	
 						</div>
 						<div class="form-group">
 							<label class="control-label col-md-offset-1 col-md-3" for="vacation">¿Esta Sonriendo?</label>
 							<div class="col-md-5">
-								<form action="action_page.php">
+								
 								    <input type="checkbox" name="smile" id=si> Si
+								    <div id="monkeyHappy"></div>
 								  	<input type="checkbox" name="smile" id=no> No
+								  	<div id="monkeySad"></div>
 								  <br><br>
-								</form>	
+								
 							</div>
 						</div>
 						<div class="form-group">
 							<div class="col-md-offset-4 col-md-4">
-								<button onclick="calcular()" class="btn btn-default">Consultar</button>
+								<button type="submit" onclick="consultar()" class="btn btn-default">Consultar</button>
 							</div>
 						</div>	
 						<div class="col-md-offset-4 col-md-4">
-							<h4 class="text-info">Mensaje:</h4>
+							<h4 class="text-info">Resultado:</h4>
 							<div id="salida" style="font-size:50px;">-</div>
 							
 						</div>				
